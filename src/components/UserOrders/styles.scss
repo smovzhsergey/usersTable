@@ -1,0 +1,21 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+$width: 80%;
+
+.orders {	
+	
+	background: #fff;
+	border: 1px solid $grey;
+	box-shadow: 2px 2px 2px 2px rgba(255,255,255,0.3);
+	position: absolute;
+	padding: 20px 10px;
+	width: 80%;
+	left: calc(( 100% - #{$width} ) / 2);
+
+	span {
+		cursor: pointer;
+		position: absolute;		
+		top: 5px;
+		right: 5px;
+	}
+}

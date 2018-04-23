@@ -1,0 +1,55 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+.userList {
+	margin: 0 auto;
+	padding: 10px 0;
+	position: relative;
+	width: 80%;
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		border: 1px solid black;
+		width: 100%;		
+			
+		th,
+		tr,
+		td {
+			border: 1px solid $black;
+		}
+
+		td {
+			padding: 20px 5px;
+			vertical-align: top;
+		}
+
+		tbody {
+			td {
+				padding: 5px;
+
+				button {
+					background: $lblue;
+					border: 1px solid $black;
+					cursor: pointer;
+					outline: none;
+					padding: 20px 30px;
+				}
+
+				span {
+					color: $dblue;
+				}
+			}
+		}
+
+		tr:nth-child(even) {
+			background: $lgray;
+		}
+
+		@media (max-width: 960px) {
+		    width: 96%;
+		}
+	}
+
+}
+
